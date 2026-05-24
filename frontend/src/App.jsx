@@ -9,6 +9,7 @@ import Log from './pages/Log';
 import Map from './pages/Map';
 import Community from './pages/Community';
 import Premium from './pages/Premium';
+import SetupChecker from './pages/SetupChecker';
 import Login from './pages/Login';
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ function AppRoutes() {
         <Route path="map" element={<Map />} />
         <Route path="community" element={<Community />} />
         <Route path="premium" element={<Premium />} />
+        <Route path="setup" element={<SetupChecker />} />
       </Route>
     </Routes>
   );
