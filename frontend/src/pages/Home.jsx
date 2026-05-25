@@ -55,7 +55,8 @@ export default function Home() {
           { to: '/chat', label: '🤖 KI-Chat', desc: 'Frag den Experten' },
           { to: '/log', label: '📖 Fangbuch', desc: 'Fang eintragen' },
           { to: '/map', label: '🗺️ Karte', desc: 'Spots entdecken' },
-          { to: '/community', label: '👥 Community', desc: 'Wettbewerbe' }
+          { to: '/community', label: '👥 Community', desc: 'Wettbewerbe' },
+          { to: '/setup', label: '🛠️ Setup Check', desc: 'Lokale Dienste testen' }
         ].map(({ to, label, desc }) => (
           <Link key={to} to={to} className="rounded-2xl bg-gray-900/80 p-4 border border-gray-800 hover:border-gray-700 transition-colors">
             <p className="font-semibold text-white text-sm">{label}</p>

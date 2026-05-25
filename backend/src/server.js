@@ -7,6 +7,7 @@ import catchesRoutes from './routes/catches.js';
 import spotsRoutes from './routes/spots.js';
 import communityRoutes from './routes/community.js';
 import premiumRoutes from './routes/premium.js';
+import setupRoutes from './routes/setup.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,6 +26,7 @@ app.use('/api', catchesRoutes);
 app.use('/api', spotsRoutes);
 app.use('/api', communityRoutes);
 app.use('/api', premiumRoutes);
+app.use('/api', setupRoutes);
 
 app.use((req, res) => res.status(404).json({ error: `Not found: ${req.method} ${req.path}` }));
 app.use((err, req, res, next) => res.status(500).json({ error: err.message }));
